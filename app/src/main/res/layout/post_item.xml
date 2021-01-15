@@ -18,7 +18,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/size_24_dp"
         android:layout_marginTop="@dimen/size_24_dp"
-        android:text="@string/author" />
+        android:text="@string/author"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textViewAuthor"
@@ -48,6 +49,7 @@
         android:layout_marginBottom="@dimen/ize_5_dp"
         android:lineHeight="@dimen/size_24_dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +63,8 @@
         android:layout_below="@+id/textViewTitle"
         android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/size_24_dp"
-        android:text="@string/posted" />
+        android:text="@string/posted"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textViewDateAdded"
@@ -82,7 +85,8 @@
         android:layout_below="@+id/textViewDateAdded"
         android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/size_24_dp"
-        android:text="@string/comments" />
+        android:text="@string/comments"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textViewCountComments"
@@ -97,18 +101,18 @@
         tools:text="Comments 24" />
 
     <ImageView
+        android:id="@+id/imageViewImage"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        android:id="@+id/imageViewImage"
+        android:layout_below="@+id/textViewCountComments"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textViewCountComments"
         android:layout_marginLeft="@dimen/size_24_dp"
         android:layout_marginTop="@dimen/ize_5_dp"
         android:layout_marginRight="@dimen/size_24_dp"
         android:layout_marginBottom="@dimen/size_24_dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         app:layout_goneMarginBottom="@dimen/size_24_dp"
         app:layout_goneMarginTop="@dimen/size_24_dp" />
 

@@ -28,6 +28,7 @@
         android:layout_marginRight="@dimen/size_24_dp"
         android:layout_marginBottom="@dimen/size_24_dp"
         android:onClick="saveImage"
+        android:textColor="@color/white"
         android:text="@string/save_to_gallery"
         app:layout_constraintBottom_toBottomOf="parent" />
 
