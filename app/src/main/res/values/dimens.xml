@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="size_24_dp">24dp</dimen>
+    <dimen name="size_15_dp">15dp</dimen>
+    <dimen name="ize_5_dp">5dp</dimen>
+</resources>

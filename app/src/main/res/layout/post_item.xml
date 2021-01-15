@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutContainerFavorite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_15_dp"
+    android:layout_marginTop="@dimen/ize_5_dp"
+    android:layout_marginRight="@dimen/size_15_dp"
+    android:layout_marginBottom="@dimen/ize_5_dp"
+    android:background="@drawable/post_border_card">
+
+    <TextView
+        android:id="@+id/textViewAuthorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/size_24_dp"
+        android:layout_marginTop="@dimen/size_24_dp"
+        android:text="@string/author" />
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/size_24_dp"
+        android:layout_marginEnd="@dimen/size_24_dp"
+        android:layout_marginBottom="@dimen/ize_5_dp"
+        android:layout_toEndOf="@+id/textViewAuthorTitle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAuthor"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size_24_dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/size_24_dp"
+        android:layout_marginBottom="@dimen/ize_5_dp"
+        android:lineHeight="@dimen/size_24_dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAuthor"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/textViewPostedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/size_24_dp"
+        android:text="@string/posted" />
+
+    <TextView
+        android:id="@+id/textViewDateAdded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="@dimen/size_24_dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/textViewPostedTitle"
+        android:textColor="@color/black"
+        tools:text="7 hours ago" />
+
+    <TextView
+        android:id="@+id/textViewCommentsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDateAdded"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/size_24_dp"
+        android:text="@string/comments" />
+
+    <TextView
+        android:id="@+id/textViewCountComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDateAdded"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="@dimen/size_24_dp"
+        android:layout_marginBottom="@dimen/size_24_dp"
+        android:layout_toEndOf="@+id/textViewCommentsTitle"
+        android:textColor="@color/black"
+        tools:text="Comments 24" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewCountComments"
+        android:layout_marginLeft="@dimen/size_24_dp"
+        android:layout_marginTop="@dimen/ize_5_dp"
+        android:layout_marginRight="@dimen/size_24_dp"
+        android:layout_marginBottom="@dimen/size_24_dp"
+        app:layout_goneMarginBottom="@dimen/size_24_dp"
+        app:layout_goneMarginTop="@dimen/size_24_dp" />
+
+</RelativeLayout>
